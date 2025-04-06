@@ -1,0 +1,30 @@
+{
+    "data": {
+      "raw_data_path": "data/raw_data/sp500_data.csv",
+      "processed_data_path": "data/processed_data/features.csv",
+      "start_date": "2015-01-01",
+      "end_date": "2025-02-28",
+      "ticker": "^GSPC"
+    },
+    "monte_carlo": {
+      "simulations": 1000,
+      "time_horizon": 1.0,
+      "time_step": 0.003968253968253968  
+    },
+    "vae": {
+      "input_dim": 20,
+      "latent_dim": 2,
+      "epochs": 50,
+      "batch_size": 32
+    },
+    "lstm": {
+      "lookback": 20,
+      "epochs": 50,
+      "batch_size": 32
+    },
+    "results": {
+      "monte_carlo_path": "results/monte_carlo_paths.csv",
+      "predictions_path": "results/predictions.csv",
+      "metrics_path": "results/evaluation_metrics.txt"
+    }
+  }
