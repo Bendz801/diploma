@@ -1,0 +1,3 @@
+data/raw_data/news_data.csv
+data/processed_data/features_news.csv
+__pycache__/
